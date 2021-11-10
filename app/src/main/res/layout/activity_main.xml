@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_fr"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"/>
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/main_bt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/home"
+            app:iconSelected="@drawable/home_selected"
+            app:iconWidth="45dp"
+            app:iconHeight="45dp"
+            app:textColorNormal="#00BCD4"
+            app:textColorSelected="#F44336"
+            app:itemText="首页"
+            app:itemTextSize="15dp" />
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconWidth="45dp"
+            app:iconHeight="45dp"
+            app:iconNormal="@drawable/type"
+            app:iconSelected="@drawable/type_selected"
+            app:itemText="分类"
+            app:textColorNormal="#00BCD4"
+            app:textColorSelected="#F44336"
+            app:itemTextSize="15dp" />
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconWidth="45dp"
+            app:iconHeight="45dp"
+            app:iconNormal="@drawable/shop"
+            app:iconSelected="@drawable/shop_selected"
+            app:textColorNormal="#00BCD4"
+            app:textColorSelected="#F44336"
+            app:itemText="购物车"
+            app:itemTextSize="15dp" />
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconWidth="45dp"
+            app:iconHeight="45dp"
+            app:iconNormal="@drawable/my"
+            app:iconSelected="@drawable/my_selected"
+            app:textColorNormal="#00BCD4"
+            app:textColorSelected="#F44336"
+            app:itemText="我的"
+            app:itemTextSize="15dp" />
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>

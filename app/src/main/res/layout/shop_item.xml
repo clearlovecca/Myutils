@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <CheckBox
+        android:id="@+id/myshop_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/myshop_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/myshop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/myshop_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/jian"
+        android:src="@drawable/jian"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/myshops_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/jia"
+        android:src="@drawable/jia"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+</LinearLayout>
